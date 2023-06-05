@@ -1,0 +1,16 @@
+img {
+  width: 200px;
+}
+
+.successMessage {
+  color: green;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.loadingIcon {
+  width: 2rem;
+  display: none;
+}

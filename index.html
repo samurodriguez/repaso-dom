@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>eCommerce</h1>
+    </header>
+
+    <main>
+      <form>
+        <label for="productName">Nombre de producto:</label>
+        <input id="productName" name="name" required />
+
+        <label for="productPrice">Precio:</label>
+        <input id="productPrice" type="number" step="0.01" name="price" />
+
+        <label for="productImage">Imagen:</label>
+        <input id="productImage" type="url" name="img" />
+
+        <button>Crear producto</button>
+      </form>
+
+      <img class="loadingIcon" src="assets/tail-spin.svg" alt="loading icon" />
+
+      <p class="successMessage"></p>
+      <p class="errorMessage"></p>
+
+      <ul class="productList"></ul>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
